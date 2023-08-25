@@ -8,11 +8,13 @@
   <body>
     <script>
       "use strict";
-      momsBeregner(100);
-      momsBeregner(300);
+
+      const pris = 100;
+      const momsetBelob = momsBeregner(pris);
+      console.log(`beløb med moms ${momsetBelob}`)
 
       function momsBeregner(pris, moms = 25) {
-        console.log(pris * (moms / 100 + 1));
+        return pris * (moms/100+1);
       }
     </script>
   </body>
