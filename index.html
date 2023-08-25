@@ -8,11 +8,11 @@
   <body>
     <script>
       "use strict";
-      momsBeregner(400);
+      momsBeregner(100);
       momsBeregner(300);
 
-      function momsBeregner(pris, moms = 1.25) {
-        console.log(pris * moms);
+      function momsBeregner(pris, moms = 25) {
+        console.log(pris * (moms / 100 + 1));
       }
     </script>
   </body>
